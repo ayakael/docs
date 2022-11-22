@@ -10,7 +10,7 @@ ms.date: 11/15/2022
 
 .NET is supported on Alpine and this article describes how to install .NET on Alpine. When an Alpine version falls out of support, .NET is no longer supported with that version.
 
-[!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]o
+[!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 For more information on installing .NET without a package manager, see one of the following articles:
 
