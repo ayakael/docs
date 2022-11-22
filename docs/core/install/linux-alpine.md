@@ -8,28 +8,65 @@ ms.date: 11/15/2022
 
 # Install the .NET SDK or the .NET Runtime on Alpine
 
-This article describes how to install .NET on Alpine. When an Alpine version falls out of support, .NET is no longer supported with that version. However, these instructions may help you to get .NET running on those versions, even though it isn't supported.
+.NET is supported on Alpine and this article describes how to install .NET on Alpine. When an Alpine version falls out of support, .NET is no longer supported with that version.
 
-[!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
+[!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]o
 
-## Install
+For more information on installing .NET without a package manager, see one of the following articles:
 
-Installers aren't available for Alpine Linux. You must install .NET in one of the following ways:
+- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
+- [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
+- [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
 
-- [Scripted install with _install-dotnet.sh_](linux-scripted-manual.md#scripted-install)
-- [Manual binary extraction](linux-scripted-manual.md#manual-install)
+## Install .NET 7
+
+[!INCLUDE [linux-dnf-install-70](includes/linux-install-70-apk.md)]
+
+## Install .NET 6
+
+[!INCLUDE [linux-dnf-install-60](includes/linux-install-60-apk.md)]
 
 ## Supported distributions
 
 The following table is a list of currently supported .NET releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://alpinelinux.org/releases/).
 
-| Alpine | .NET      |
-|--------|-----------|
-| 3.15   | 7, 6, 3.1 |
-| 3.14   | 6, 3.1    |
-| 3.13   | 6, 3.1    |
+- A ✔️ indicates that the version of Alpine or .NET is still supported.
+- A ❌ indicates that the version of Alpine or .NET isn't supported on that Alpine release.
+- When both a version of Alpine and a version of .NET have ✔️, that OS and .NET combination is supported.
+
+| Alpine  | .NET 6 | .NET 7    |
+|---------|---------------|-----------|
+| ✔️ 3.17 | ✔️ 6.0 | ✔️ 7.0    |
+| ✔️ 3.16 | ✔️ 6.0 | ❌ 7.0    |
+
+## Supported architectures
+
+- A ✔️ indicates that the architectecture of Alpine, from that release onwards, is supported
+- A ❌ indicates that the architecture of Alpine is not supported
+- When both an architecture of Alpine and a version of .NET have ✔️, that OS and .NET combination is supported, from the stated release version onwards.
+
+
+| Arch.     | .NET 6  | .NET 7  |
+|-----------|---------|---------|
+| ✔️ x86_64  | ✔️ 3.16  | ✔️ 3.17  |
+| ✔️ x86     | ❌ ---   | ❌ ---   |
+| ✔️ aarch64 | ✔️ 3.16  | ✔️ 3.17  |
+| ✔️ armv7   | ✔️ 3.16  | ✔️ 3.17  |
+| ✔️ armhf   | ❌ ---   | ❌ ---   |
+| ✔️ s390x   | ✔️ 3.17  | ❌ ---   |
+| ✔️ ppc64le | ❌ ---   | ❌ ---   |
+| ✔️ riscv64 | ❌ ---   | ❌ ---   |
+
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
+
+## Install preview versions
+
+[!INCLUDE [preview installs don't support package managers](./includes/linux-install-previews.md)]
+
+## Remove preview versions
+
+[!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
 ## Dependencies
 
