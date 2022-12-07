@@ -28,29 +28,40 @@ The Alpine package manager supports installing some versions of .NET. If the .NE
 
 ## Supported distributions
 
+There are two types of supported releases, Long Term Support (LTS) releases or Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+
 The following table is a list of currently supported .NET releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://alpinelinux.org/releases/).
 
-| Alpine | .NET      |
-|--------|-----------|
-| 3.17   | 7, 6      |
-| 3.16   | 7, 6, 3.1 |
-| 3.15   | 7, 6, 3.1 |
-| 3.14   | 6, 3.1    |
+- ✔️ indicates that the version of Alpine or .NET is still supported.
+- A ❌ indicates that the version of Alpine or .NET isn't supported on that Alpine release.
+- When both a version of Alpine and a version of .NET have ✔️, that OS and .NET combination is supported.
+
+| Alpine  | .NET 6 (LTS) | .NET 7 (STS) |
+|---------|--------------|--------------|
+| ✔️ 3.17  | ✔️ 6.0        | ✔️ 7.0        |
+| ✔️ 3.16  | ✔️ 6.0        | ✔️ 7.0        |
+| ✔️ 3.15  | ✔️ 6.0        | ✔️ 7.0        |
+| ✔️ 3.14  | ✔️ 6.0        | ❌ 7.0        |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 ## Supported architectures
+The following table is a list of currently supported .NET releases and the architecture of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the architecture of [Alpine is supported#](https://alpinelinux.org/releases/). Note that only `x86_64`, `armv7`, `aarch64` is officially supported by Microsoft. Other architectures are supported by the distribution maintainers, and can be installed using the `apk` package manager.
 
-| Architecture     | .NET 6  | .NET 7  |
-|------------------|---------|---------|
-| x86_64           | ✔️ 3.16 | ✔️ 3.17 |
-| x86              | ❌      | ❌      |
-| aarch64          | ✔️ 3.16 | ✔️ 3.17 |
-| armv7            | ✔️ 3.16 | ✔️ 3.17 |
-| armhf            | ❌      | ❌      |
-| s390x            | ✔️ 3.17 | ❌      |
-| ppc64le          | ❌      | ❌      |
-| riscv64          | ❌      | ❌      |
+- ✔️ indicates that the architecture of Alpine or .NET is still supported.
+- A ❌ indicates that the architecture of Alpine or .NET isn't supported
+- The version number is when the the package was first released for that platform
+
+| Architecture | .NET 6 | .NET 7 |
+|--------------|--------|--------|
+| x86_64       | ✔️ 3.16 | ✔️ 3.17 |
+| x86          | ❌      | ❌      |
+| aarch64      | ✔️ 3.16 | ✔️ 3.17 |
+| armv7        | ✔️ 3.16 | ✔️ 3.17 |
+| armhf        | ❌      | ❌      |
+| s390x        | ✔️ 3.17 | ✔️ 3.17 |
+| ppc64le      | ❌      | ❌      |
+| riscv64      | ❌      | ❌      |
 
 ## Install preview versions
 

@@ -21,15 +21,21 @@ To install .NET from Red Hat on RHEL, you first need to register using the Red H
 
 ## Supported distributions
 
+There are two types of supported releases, Long Term Support (LTS) releases or Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+
 The following table is a list of currently supported .NET releases on both RHEL and CentOS Stream. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the Linux distribution is no longer supported.
 
-| Distribution           | .NET      |
-| ---------------------- | --------- |
-| RHEL 9 (9.1)           | 7, 6      |
-| RHEL 8 (8.7)           | 7, 6, 3.1 |
-| RHEL 7                 | 6, 3.1    |
-| CentOS Stream 9        | 7, 6      |
-| CentOS Stream 8        | 7, 6, 3.1 |
+- ✔️ indicates that the version of the distribution or .NET is still supported.
+- A ❌ indicates that the version of the distribution or .NET isn't supported on that Alpine release.
+- When both a version of the distribution and a version of .NET have ✔️, that OS and .NET combination is supported.
+
+| Distribution        | .NET 6 (LTS) | .NET 7 (STS) |
+|---------------------|--------------|--------------|
+| ✔️ RHEL 9 (9.1)      | ✔️ 6.0        | ✔️ 7.0        |
+| ✔️ RHEL 8 (8.7)      | ✔️ 6.0        | ✔️ 7.0        |
+| ✔️ RHEL 7            | ✔️ 6.0        | ❌ 7.0        |
+| ✔️ CentOS Stream 9   | ✔️ 6.0        | ✔️ 7.0        |
+| ✔️ CentOS Stream 8   | ✔️ 6.0        | ✔️ 7.0        |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

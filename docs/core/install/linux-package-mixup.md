@@ -36,6 +36,7 @@ One symptom of these problems is that both the `/usr/lib64/dotnet` and `/usr/sha
 
 This generally happens when two Linux package repositories provide .NET packages. While Microsoft provides a Linux package repository to source .NET packages, some Linux distributions also provide .NET packages, such as:
 
+- Alpine Linux
 - Arch
 - CentOS
 - CentOS Stream

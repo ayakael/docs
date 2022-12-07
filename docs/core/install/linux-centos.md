@@ -16,11 +16,17 @@ ms.date: 11/15/2022
 
 ## Supported distributions
 
+There are two types of supported releases, Long Term Support (LTS) releases or Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+
 The following table is a list of currently supported .NET releases on both CentOS 7 and CentOS 8. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of CentOS is no longer supported.
 
-| CentOS  | .NET      |
-|---------|-----------|
-| 7       | 7, 6, 3.1 |
+- A ✔️ indicates that the version of CentOS or .NET is still supported.
+- A ❌ indicates that the version of CentOS or .NET isn't supported on that CentOS release.
+- When both a version of CentOS and a version of .NET have ✔️, that OS and .NET combination is supported.
+
+| CentOS  | .NET 6 (LTS) | .NET 7 (STS) |
+|---------|--------------|--------------|
+| ✔️ 7     | ✔️ 6.0        | ✔️ 7.0        |
 
 > [!WARNING]
 > \*CentOS 8 reached an early End Of Life (EOL) on December 31st, 2021. For more information, see the official [CentOS Linux EOL page](https://www.centos.org/centos-linux-eol/). Because of this, .NET 6 and later versions won't be supported on CentOS Linux 8.

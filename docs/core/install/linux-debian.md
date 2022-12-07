@@ -16,12 +16,18 @@ This article describes how to install .NET on Debian. When a Debian version fall
 
 ## Supported distributions
 
+There are two types of supported releases, Long Term Support (LTS) releases or Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+
 The following table is a list of currently supported .NET releases and the versions of Debian they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Debian reaches end-of-life](https://wiki.debian.org/DebianReleases).
 
-| Debian  | .NET      |
-|---------|-----------|
-| 11      | 7, 6, 3.1 |
-| 10      | 7, 6, 3.1 |
+- A ✔️ indicates that the version of Debian or .NET is still supported.
+- A ❌ indicates that the version of Debian or .NET isn't supported on that Debian release.
+- When both a version of Debian and a version of .NET have ✔️, that OS and .NET combination is supported.
+
+| Debian                   | .NET 6 (LTS) | .NET 7 (STS) |
+|--------------------------|--------------|--------------|
+| ✔️ [11](#debian-11-)      | ✔️ 6.0        | ✔️ 7.0        |
+| ✔️ [10](#debian-10-)      | ✔️ 6.0        | ✔️ 7.0        |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

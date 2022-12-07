@@ -20,13 +20,20 @@ For more information on installing .NET without a package manager, see one of th
 
 ## Supported distributions
 
+There are two types of supported releases, Long Term Support (LTS) releases or Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+
+
 The following table is a list of currently supported .NET releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
 
-| Fedora | .NET      |
-|--------|-----------|
-| 37     | 6         |
-| 36     | 6, 3.1    |
-| 35     | 6, 3.1    |
+- ✔️ indicates that the version of Alpine or .NET is still supported.
+- A ❌ indicates that the version of Alpine or .NET isn't supported on that Alpine release.
+- When both a version of Alpine and a version of .NET have ✔️, that OS and .NET combination is supported.
+
+| Fedora  | .NET 6 (LTS) | .NET 7 (STS |
+|---------|--------------|-------------|
+| ✔️ 37    | ✔️ 6.0        | ❌ 7.0       |
+| ✔️ 36    | ✔️ 6.0        | ❌ 7.0       |
+| ✔️ 35    | ✔️ 6.0        | ❌ 7.0       |
 
 > [!IMPORTANT]
 > .NET 7 isn't yet ready for Fedora. This article will be updated when it's available.
@@ -36,10 +43,6 @@ The following table is a list of currently supported .NET releases and the versi
 ## Install .NET 6
 
 [!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
-
-## Install .NET Core 3.1
-
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 
 ## Install preview versions
 

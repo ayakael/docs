@@ -16,15 +16,21 @@ ms.date: 08/07/2022
 
 ## Supported distributions
 
+There are two types of supported releases, Long Term Support (LTS) releases or Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS rteleases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+
 The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on.
 
-| Ubuntu                 | .NET       |
-|------------------------|------------|
-| [22.10](#2210)         | 7, 6       |
-| [22.04 (LTS)](#2204)   | 7, 6       |
-| [20.04 (LTS)](#2004)   | 7, 6, 3.1  |
-| [18.04 (LTS)](#1804)   | 7, 6, 3.1  |
-| [16.04 (LTS)](#1604)   | 6, 3.1    |
+- ✔️ indicates that the version of Alpine or .NET is still supported.
+- A ❌ indicates that the version of Alpine or .NET isn't supported on that Alpine release.
+- When both a version of Alpine and a version of .NET have ✔️, that OS and .NET combination is supported.
+
+| Ubuntu                   | .NET 6 (LTS) | .NET 7 (STS) |
+|--------------------------|--------------|--------------|
+| ✔️ [22.10](#2210)         | ✔️ 6.0        | ✔️ 7.0        |
+| ✔️ [22.04 (LTS)](#2204)   | ✔️ 6.0        | ✔️ 7.0        |
+| ✔️ [20.04 (LTS)](#2004)   | ✔️ 6.0        | ✔️ 7.0        |
+| ✔️ [18.04 (LTS)](#1804)   | ✔️ 6.0        | ✔️ 7.0        |
+| ✔️ [16.04 (LTS)](#1604)   | ✔️ 6.0        | ❌ 7.0        |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
